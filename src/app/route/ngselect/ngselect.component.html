@@ -1,0 +1,28 @@
+<h3>ng-select with NO typeahead</h3>
+<label>City</label>
+<ng-select [items]="items"
+           bindLabel="name"
+           bindValue="id"
+           [searchable]="false"
+           placeholder="Select city"
+           [(ngModel)]="selectedCityIdNoType">
+</ng-select>
+<p>
+    Selected city ID: {{selectedCityIdNoType}}
+</p>
+
+<hr>
+<hr>
+    
+
+<h3>ng-select with typeahead</h3>
+<label>City</label>
+<ng-select [items]="items"
+           bindLabel="name"
+           bindValue="id"
+           placeholder="Select city"
+           [(ngModel)]="selectedCityId">
+</ng-select>
+<p>
+    Selected city ID: {{selectedCityId}}
+</p>    

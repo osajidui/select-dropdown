@@ -5,10 +5,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { NgxSelectModule } from 'ngx-select-ex';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { APP_ROUTING } from './app.routing';
 
 import { NgxselectexComponent } from './route/ngxselectex/ngxselectex.component';
+import { NgselectComponent } from './route/ngselect/ngselect.component';
 
 @NgModule({
     imports: [
@@ -17,11 +19,13 @@ import { NgxselectexComponent } from './route/ngxselectex/ngxselectex.component'
         ReactiveFormsModule,
         HttpModule,
         NgxSelectModule,
+        NgSelectModule,
         APP_ROUTING
     ],
     declarations: [
         AppComponent,
-        NgxselectexComponent
+        NgxselectexComponent,
+        NgselectComponent
     ],
     bootstrap: [
         AppComponent
