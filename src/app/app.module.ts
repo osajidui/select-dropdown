@@ -11,6 +11,8 @@ import { APP_ROUTING } from './app.routing';
 
 import { NgxselectexComponent } from './route/ngxselectex/ngxselectex.component';
 import { NgselectComponent } from './route/ngselect/ngselect.component';
+import { IframeComponent } from './route/iframe/iframe.component';
+
 
 @NgModule({
     imports: [
@@ -25,7 +27,8 @@ import { NgselectComponent } from './route/ngselect/ngselect.component';
     declarations: [
         AppComponent,
         NgxselectexComponent,
-        NgselectComponent
+        NgselectComponent,
+        IframeComponent
     ],
     bootstrap: [
         AppComponent
