@@ -1,7 +1,7 @@
 <h3>ngx-select-ex with NO typeahead</h3>
     <div class="example-block">
         <div class="example-block__item">
-            <ngx-select [allowClear]="true"
+            <ngx-select [allowClear]="false"
                         [items]="items"
                         [noAutoComplete]="true"
                         [disabled]="ngxDisabled"
@@ -16,7 +16,7 @@
                 <button class="btn btn-primary" (click)="ngxDisabled = !ngxDisabled">
                     {{ngxDisabled ? 'Enable' : 'Disable'}}
                 </button>
-            </div>
+            </div> 
         </div>
     </div>
 
@@ -28,7 +28,7 @@
     <div class="example-block">
         <div class="example-block__item">
             <ngx-select [formControl]="ngxControl"
-                        [allowClear]="true"
+                        [allowClear]="false"
                         [defaultValue]="doNgxDefault()"
                         [items]="items"
                         placeholder="No city selected"

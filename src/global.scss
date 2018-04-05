@@ -6,6 +6,36 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
-body {
-	
+/********************************/
+/*** Styles for ngx-select-ex ***/
+/********************************/
+.ngx-select {
+    height: 25px;
+    width: 300px;
+    border: 1px solid #727272;
+    border-radius: 3px;
 }
+
+.ngx-select, .ngx-select__placeholder, 
+.ngx-select__choices, .ngx-select__item_no-found, 
+.ngx-select__choices {
+    font-size: 12px;
+}
+
+.ngx-select .btn {
+    border: none;
+    padding: 0px;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+.ngx-select .form-control {
+    border: none;
+    padding: 0px;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+/***********************************/
+/* End of styles for ngx-select-ex */
+/***********************************/
